@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./css/index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import VqeProvider from "./VqeProvider";
+import "./css/index.css";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <VqeProvider>
     <App />
-  </React.StrictMode>,
+  </VqeProvider>,
   document.getElementById("root")
 );
 

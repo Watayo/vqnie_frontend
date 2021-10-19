@@ -1,17 +1,22 @@
+import React from "react";
 import "./css/App.css";
-import HamiltonianDefinition from "./HamiltonianDefinition";
+import VqeSetting from "./VqeSetting";
+import { useVqe } from "./VqeProvider";
+
 // import Qni from 'qni';
 
 function App() {
+  const { vqe } = useVqe();
   return (
     <>
-      <HamiltonianDefinition
-        onNewHamiltonian={(hamiltonian) => {
-          console.log(hamiltonian);
-          // TODO: ハミルトニアン描画する。
-          // TODO: blueqatのコード生成する。
+      <VqeSetting
+        onNewVqeSetting={() => {
+          // TODO この時点ではvqeの中身は変化されていない。理解する。
+          console.log(vqe);
         }}
-      ></HamiltonianDefinition>
+      ></VqeSetting>
+      <div>{vqe.Hamiltonian}</div>
+      <div>{vqe.qubitNum}</div>
     </>
   );
 }
