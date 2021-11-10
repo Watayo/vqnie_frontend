@@ -1,4 +1,4 @@
 {
   "Hamiltonian": "1.23 * I - 4.56 * X(0) + 2.45 * Y(0) + 2.34 * Z(0)",
-  "qubitNum": 0
+  "qubit": 0
 }

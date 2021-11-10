@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import VqeProvider from "./VqeProvider";
+import VqeProvider from "./containers/VqeProvider";
 import "./css/index.css";
 
 ReactDOM.render(
