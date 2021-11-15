@@ -8,10 +8,16 @@ function VqeProvider({ children }) {
   const [vqe, setVqe] = useState(vqe_data);
 
   const setHamiltonianData = (Hamiltonian) =>
-    setVqe(...vqe, { Hamiltonian: Hamiltonian });
+    setVqe({
+      ...vqe,
+      Hamiltonian: Hamiltonian,
+    });
 
   const setQuantumCircuitData = (QuantumCircuit) =>
-    setVqe(...vqe, { QuantumCircuit: QuantumCircuit });
+    setVqe({
+      ...vqe,
+      QuantumCircuit: QuantumCircuit,
+    });
 
   return (
     <VqeContext.Provider
