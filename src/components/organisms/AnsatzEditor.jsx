@@ -1,16 +1,16 @@
 import React from "react";
 import Palette from "./Palette";
-import QuantumCircuit from "./QuantumCircuit";
+import Ansatz from "./Ansatz";
 import "qni";
 import "../css/CircuitEditor.css";
 
-const CircuitEditor = () => {
+const AnsatzEditor = () => {
   return (
     <circuit-editor>
       <Palette></Palette>
-      <QuantumCircuit></QuantumCircuit>
+      <Ansatz></Ansatz>
     </circuit-editor>
   );
 };
 
-export default CircuitEditor;
+export default AnsatzEditor;

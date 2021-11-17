@@ -2,16 +2,17 @@ import { React, useRef } from "react";
 import { useVqe } from "../../containers/VqeProvider";
 import "qni";
 import "../css/QuantumCircuit.css";
-const QuantumCircuit = () => {
+const Ansatz = () => {
   const quantumCircuit = useRef();
-  const { setQuantumCircuitData } = useVqe();
+  const { setAnsatzData } = useVqe();
 
   const setQuantumCircuit = () => {
     const divDOM = quantumCircuit.current;
     const quantumCircuitDOM = divDOM.children;
-    const circuitJSON = quantumCircuitDOM[0].toJson();
-    console.log(circuitJSON);
-    setQuantumCircuitData(circuitJSON);
+    const ansatzJSON = JSON.stringify(quantumCircuitDOM[0].serializedSteps);
+
+    console.log(ansatzJSON);
+    setAnsatzData(ansatzJSON);
   };
 
   return (
@@ -24,4 +25,4 @@ const QuantumCircuit = () => {
   );
 };
 
-export default QuantumCircuit;
+export default Ansatz;

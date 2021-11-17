@@ -13,15 +13,26 @@ function VqeProvider({ children }) {
       Hamiltonian: Hamiltonian,
     });
 
-  const setQuantumCircuitData = (QuantumCircuit) =>
+  const setQubitCountData = (qubitCount) =>
     setVqe({
       ...vqe,
-      QuantumCircuit: QuantumCircuit,
+      QubitCount: qubitCount,
+    });
+
+  const setAnsatzData = (Ansatz) =>
+    setVqe({
+      ...vqe,
+      Ansatz: Ansatz,
     });
 
   return (
     <VqeContext.Provider
-      value={{ vqe, setHamiltonianData, setQuantumCircuitData }}
+      value={{
+        vqe,
+        setHamiltonianData,
+        setQubitCountData,
+        setAnsatzData,
+      }}
     >
       {children}
     </VqeContext.Provider>

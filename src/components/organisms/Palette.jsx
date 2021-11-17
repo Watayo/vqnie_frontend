@@ -31,9 +31,6 @@ const Palette = () => {
       <palette-dropzone>
         <write-gate data-value="0"></write-gate>
       </palette-dropzone>
-      <palette-dropzone>
-        <write-gate data-value="1"></write-gate>
-      </palette-dropzone>
     </div>
   );
 };

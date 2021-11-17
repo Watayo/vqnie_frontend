@@ -3,7 +3,7 @@ import { useVqe } from "../../containers/VqeProvider";
 import { useInput } from "../../hooks";
 import "../css/VqeSetting.css";
 
-function HamiltonianSetting({ onNewHamiltonianSetting = (f) => f }) {
+const HamiltonianSetting = () => {
   const [hamiltonianProps, resetHamiltonian] = useInput("");
   const { setHamiltonianData } = useVqe();
 
@@ -15,7 +15,6 @@ function HamiltonianSetting({ onNewHamiltonianSetting = (f) => f }) {
 
   return (
     <>
-      <h1>Set VQE</h1>
       <form onSubmit={submit}>
         <input
           {...hamiltonianProps}
@@ -24,10 +23,9 @@ function HamiltonianSetting({ onNewHamiltonianSetting = (f) => f }) {
           required
         />
         <button>set</button>
-        <div className="input-value">{hamiltonianProps.value}</div>
       </form>
     </>
   );
-}
+};
 
 export default HamiltonianSetting;
