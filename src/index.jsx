@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import VqeProvider from "./containers/VqeProvider";
 import "./css/index.css";
 
 ReactDOM.render(
-  <VqeProvider>
-    <App />
-  </VqeProvider>,
+  <Router basename={process.env.PUBLIC_URL}>
+    <VqeProvider>
+      <App />
+    </VqeProvider>
+  </Router>,
   document.getElementById("root")
 );
 
