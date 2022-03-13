@@ -1,5 +1,6 @@
 .palette {
-  padding: 20px 15px;
+  width: 60%;
+  padding: 20px 20px;
   border: solid;
   border-color: darkgray;
   border-bottom-width: 4px;

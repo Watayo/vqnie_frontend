@@ -7,16 +7,10 @@ export const useVqe = () => useContext(VqeContext);
 function VqeProvider({ children }) {
   const [vqe, setVqe] = useState(vqe_data);
 
-  const setHamiltonianData = (Hamiltonian) =>
+  const setHamiltonianData = (Geometry) =>
     setVqe({
       ...vqe,
-      Hamiltonian: Hamiltonian,
-    });
-
-  const setQubitCountData = (qubitCount) =>
-    setVqe({
-      ...vqe,
-      QubitCount: qubitCount,
+      Geometry: Geometry,
     });
 
   const setAnsatzData = (Ansatz) =>
@@ -30,7 +24,6 @@ function VqeProvider({ children }) {
       value={{
         vqe,
         setHamiltonianData,
-        setQubitCountData,
         setAnsatzData,
       }}
     >

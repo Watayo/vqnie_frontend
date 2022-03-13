@@ -1,29 +1,51 @@
 import { React } from "react";
 import { useVqe } from "../../containers/VqeProvider";
 import { useInput } from "../../hooks";
+import {
+  TextField,
+  Button,
+  Box,
+  Select,
+  MenuItem,
+  InputLabel,
+} from "@mui/material";
 import "../css/VqeSetting.css";
 
 const HamiltonianSetting = () => {
-  const [hamiltonianProps, resetHamiltonian] = useInput("");
-  const { setHamiltonianData } = useVqe();
+  const [hamiltonianProps] = useInput("");
+  const { vqe, setHamiltonianData } = useVqe();
 
   const submit = (event) => {
     event.preventDefault();
     setHamiltonianData(hamiltonianProps.value);
-    resetHamiltonian();
+    // resetHamiltonian();
   };
 
   return (
     <>
-      <form onSubmit={submit}>
-        <input
-          {...hamiltonianProps}
-          type="text"
-          placeholder="1.23 * I - 4.56 * X(0) + 2.45 * Y(0) + 2.34 * Z(0)"
-          required
-        />
-        <button>set</button>
-      </form>
+      <Box p={2}>
+        <h2>SetGeometry</h2>
+        <form onSubmit={submit}>
+          <Box sx={{ display: "flex", mx: 1 }} mt={2.5} mb={1.25}>
+            <TextField
+              variant="outlined"
+              style={{ width: 500 }}
+              label="Geometry"
+              required
+              {...hamiltonianProps}
+            />
+            <Box sx={{ my: "auto", ml: 2 }}>
+              <Button style={{ height: 45 }} type="submit" variant="contained">
+                {vqe["Geometry"] === "" ? (
+                  <span>SET</span>
+                ) : (
+                  <span>DONE/SET</span>
+                )}
+              </Button>
+            </Box>
+          </Box>
+        </form>
+      </Box>
     </>
   );
 };
