@@ -7,11 +7,11 @@ import VqeProvider from "./containers/VqeProvider";
 import "./css/index.css";
 
 ReactDOM.render(
-  <Router basename={process.env.PUBLIC_URL}>
+  <div>
     <VqeProvider>
       <App />
     </VqeProvider>
-  </Router>,
+  </div>,
   document.getElementById("root")
 );
 

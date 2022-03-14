@@ -28,9 +28,6 @@ const Palette = () => {
       <palette-dropzone>
         <control-gate></control-gate>
       </palette-dropzone>
-      <palette-dropzone>
-        <write-gate data-value="0"></write-gate>
-      </palette-dropzone>
     </div>
   );
 };

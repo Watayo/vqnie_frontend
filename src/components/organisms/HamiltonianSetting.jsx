@@ -1,14 +1,7 @@
 import { React } from "react";
 import { useVqe } from "../../containers/VqeProvider";
 import { useInput } from "../../hooks";
-import {
-  TextField,
-  Button,
-  Box,
-  Select,
-  MenuItem,
-  InputLabel,
-} from "@mui/material";
+import { TextField, Button, Box } from "@mui/material";
 import "../css/VqeSetting.css";
 
 const HamiltonianSetting = () => {
