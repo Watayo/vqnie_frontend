@@ -7,11 +7,11 @@ import VqeProvider from "./containers/VqeProvider";
 import "./css/index.css";
 
 ReactDOM.render(
-  <div>
+  <React.StrictMode>
     <VqeProvider>
       <App />
     </VqeProvider>
-  </div>,
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
