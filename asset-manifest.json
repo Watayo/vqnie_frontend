@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/vqnie_frontend/static/css/main.01cec2ed.chunk.css",
-    "main.js": "/vqnie_frontend/static/js/main.4068e63f.chunk.js",
-    "main.js.map": "/vqnie_frontend/static/js/main.4068e63f.chunk.js.map",
+    "main.js": "/vqnie_frontend/static/js/main.d75426f0.chunk.js",
+    "main.js.map": "/vqnie_frontend/static/js/main.d75426f0.chunk.js.map",
     "runtime-main.js": "/vqnie_frontend/static/js/runtime-main.299d1e9b.js",
     "runtime-main.js.map": "/vqnie_frontend/static/js/runtime-main.299d1e9b.js.map",
-    "static/js/2.b4d92f8b.chunk.js": "/vqnie_frontend/static/js/2.b4d92f8b.chunk.js",
-    "static/js/2.b4d92f8b.chunk.js.map": "/vqnie_frontend/static/js/2.b4d92f8b.chunk.js.map",
+    "static/js/2.7d87f1e4.chunk.js": "/vqnie_frontend/static/js/2.7d87f1e4.chunk.js",
+    "static/js/2.7d87f1e4.chunk.js.map": "/vqnie_frontend/static/js/2.7d87f1e4.chunk.js.map",
     "static/js/3.ebfe4864.chunk.js": "/vqnie_frontend/static/js/3.ebfe4864.chunk.js",
     "static/js/3.ebfe4864.chunk.js.map": "/vqnie_frontend/static/js/3.ebfe4864.chunk.js.map",
     "index.html": "/vqnie_frontend/index.html",
     "static/css/main.01cec2ed.chunk.css.map": "/vqnie_frontend/static/css/main.01cec2ed.chunk.css.map",
-    "static/js/2.b4d92f8b.chunk.js.LICENSE.txt": "/vqnie_frontend/static/js/2.b4d92f8b.chunk.js.LICENSE.txt"
+    "static/js/2.7d87f1e4.chunk.js.LICENSE.txt": "/vqnie_frontend/static/js/2.7d87f1e4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.299d1e9b.js",
-    "static/js/2.b4d92f8b.chunk.js",
+    "static/js/2.7d87f1e4.chunk.js",
     "static/css/main.01cec2ed.chunk.css",
-    "static/js/main.4068e63f.chunk.js"
+    "static/js/main.d75426f0.chunk.js"
   ]
 }
