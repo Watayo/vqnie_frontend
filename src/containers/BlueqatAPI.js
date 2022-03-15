@@ -14,7 +14,7 @@ import {
 } from "recharts";
 import { Rings } from "react-loader-spinner";
 
-const url = "http://127.0.0.1:5000/";
+const url = "http://vqnie.blueqat.com/";
 const BlueqatAPI = () => {
   const { vqe } = useVqe();
   const [APIResult, setAPIResult] = useState([]);
