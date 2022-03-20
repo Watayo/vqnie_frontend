@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vqnie_frontend/static/css/main.01cec2ed.css",
-    "main.js": "/vqnie_frontend/static/js/main.803dcca5.js",
+    "main.js": "/vqnie_frontend/static/js/main.b80e604b.js",
     "main.css.map": "/vqnie_frontend/static/css/main.01cec2ed.css.map",
-    "main.js.map": "/vqnie_frontend/static/js/main.803dcca5.js.map",
+    "main.js.map": "/vqnie_frontend/static/js/main.b80e604b.js.map",
     "static/js/1.5a08f291.chunk.js": "/vqnie_frontend/static/js/1.5a08f291.chunk.js",
     "static/js/1.5a08f291.chunk.js.map": "/vqnie_frontend/static/js/1.5a08f291.chunk.js.map",
     "index.html": "/vqnie_frontend/index.html"
   },
   "entrypoints": [
     "static/css/main.01cec2ed.css",
-    "static/js/main.803dcca5.js"
+    "static/js/main.b80e604b.js"
   ]
 }
